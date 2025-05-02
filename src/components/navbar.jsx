@@ -2,30 +2,21 @@
 import styled from 'styled-components';
 
 const StyledNav = styled.div`
-color: blue;
-background-color: red;
-`;
+background-color: #0058ab;
+padding: 1.5rem 1rem;
+`
 
-const Testo = styled.div`
-background-color: black;
+const Title = styled.span`
 color: white;
-text-align: center;
-padding: 1rem;
-`;
-
-const Paragraph = styled.p`
-color: red;
-background-color: blue;
-`;
+font-weight: 900;
+font-size: 2rem;
+`
 
 const Navbar = () => {
     return (
-    <>
-        <Paragraph>Ceci est un test</Paragraph>
-        <Testo>
-            <p>Deuxième testo</p>
-        </Testo>
-    </>)
+    <StyledNav>
+        <Title>Odin Shopping Cart</Title>
+    </StyledNav>)
 }
 
 export default Navbar;

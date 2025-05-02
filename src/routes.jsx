@@ -1,4 +1,5 @@
 import App from "./App";
+import Shopping from "./Shopping";
 import ErrorPage from "./ErrorPage";
 
 const routes = [
@@ -6,6 +7,10 @@ const routes = [
         path: "/",
         element: <App />,
         errorElement: <ErrorPage />,
+    },
+    {
+        path: "/Shop",
+        element: <Shopping />,
     }
 ]
 

@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <Card title={"Testoooo"} price={"50€"}/>
+      <Card title={"Test item"} price={"50€"}/>
     </>
   )
 }

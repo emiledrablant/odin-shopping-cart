@@ -1,9 +1,9 @@
 
 import styled from "styled-components";
 
-/* import Icon from '@mdi/react';
-import { mdiCartOutline } from '@mdi/js';
-<Icon path={mdiCartOutline} size={2} /> */
+const Title = styled.h2`
+font-size: 1.6rem;
+`
 
 const StyledCard = styled.div`
 background-color: #fff;
@@ -17,9 +17,6 @@ flex-direction: column;
 gap: 8px;
 `
 
-const Title = styled.h2`
-font-size: 1.6rem;
-`
 
 const Price = styled.p`
 color: green;
@@ -27,13 +24,19 @@ font-size: 1.2rem;
 font-weight: bold;
 `
 
+const Image = styled.img`
+width: 80px;
+align-self: center;
+margin-bottom: 8px;
+`
+
 const Card = ({title, image, price}) => {
 
     return (
         <StyledCard>
-            {image}
+            <Image src={image} alt="" />
             <Title>{title}</Title>
-            <Price>{price}</Price>
+            <Price>{price} €</Price>
         </StyledCard>
     )
 }

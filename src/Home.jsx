@@ -2,7 +2,7 @@
 const Home = () => {
     return(
         <>
-        TEST TEST TEST TEST
+        This would be the homepage where everything is normally displayed.
         </>
     )
 }

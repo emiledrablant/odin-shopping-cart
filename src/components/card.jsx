@@ -1,14 +1,17 @@
 
 import styled from "styled-components";
+import { Link } from 'react-router-dom';
 
 const Title = styled.h2`
 font-size: 1.6rem;
+color: black;
 `
 
-const StyledCard = styled.div`
+const StyledCard = styled(Link)`
 background-color: #fff;
 border-radius: 8px;
 
+text-decoration: none;
 margin: 1rem;
 padding: 1rem 1.5rem;
 display: flex;
